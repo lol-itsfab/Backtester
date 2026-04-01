@@ -15,7 +15,7 @@ def fetch_ohlcv (
     Fetch Only High Low Close Volume (OHLCV) data for a ticker and return clean DataBar objects.
     
     Arguments:
-    ticker: The stock symbol to fetch data for ("APPL", "SPY", "VOO", etc.)
+    ticker: The stock symbol to fetch data for ("AAPL", "SPY", "VOO", etc.)
     start: "YYYY-MM-DD"
     end: "YYYY-MM-DD
     interval: "1d"
@@ -61,5 +61,5 @@ def fetch_ohlcv (
             This logs bad bars but does not crash the entire fetch.
             This makes it so we know when there is a prblem with the data.
             """
-        return sorted(bars, key = lambda b : b.timestamp)
+    return sorted(bars, key = lambda b : b.timestamp)
     
