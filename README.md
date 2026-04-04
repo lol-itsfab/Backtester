@@ -92,13 +92,14 @@ venv\Scripts\Activate.ps1       # Windows
 pip install -r requirements.txt
 pytest tests/ -v
 ```
+```bash
 git clone https://github.com/lol-itsfab/Backtester.git
 cd Backtester
 python3 -m venv venv
 source venv/bin/activate        # Mac/Linux
 pip install -r requirements.txt
 pytest tests/ -v
-
+```
 ---
 
 ## Running a backtest
